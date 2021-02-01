@@ -19,6 +19,7 @@
     "webpack-dev-server": "^3.9.0"
   },
   "dependencies": {
+    "@material-ui/core": "^4.11.3",
     "css-loader": "^5.0.1",
     "style-loader": "^2.0.0",
     "swipejs": "^2.3.0"

@@ -14,18 +14,26 @@
                     <h1>Let's set up your account</h1>
                     <div class="haveAccount">Already have an account? <a href="#" class="input-sign-in">Sign in</a></div>
                     <form action="/">
-                        <input type="text" id="name" name="name" placeholder="Your name"><br>
-                        <input type="text" id="name" name="name" placeholder="Email address"><br>
-                        <select name="cars" id="cars">
+                        <div class="form-row">
+                            <input type="text" class="input-text" id="name" required placeholder="Your Name" />
+                            <label class="label-helper" for="name">Name</label>
+                          </div>
+                        <div class="form-row">
+                            <input type="email" class="input-text" id="email" name="email" placeholder="Email Address" required placeholder="Email address">
+                            <label class="label-helper" for="email">Email Address</label>
+                        </div>
+                        <select name="list" id="list">
                             <option value="" disabled selected>I would describe my user type as</option>
-                            <option value="volvo">Volvo</option>
-                            <option value="saab">Saab</option>
-                            <option value="mercedes">Mercedes</option>
-                            <option value="audi">Audi</option>
-                          </select><br>                      
-                        <input type="password" id="password" name="password" placeholder="Password"><br>
-                        <span class="small">Minimum 8 characters</span><br>
-                        <input type="submit" value="Next"><br>
+                            <option value="developer">Developer</option>
+                            <option value="designer">Designer</option>
+                            <option value="productManager">Product Manager</option>
+                          </select><br>  
+                        <div class="form-row">                    
+                            <input required type="password" class="input-text" id="password" name="password" placeholder="Password">
+                            <label class="label-helper" for="password">Password</label>
+                        </div>
+                        <span class="small">Minimum 8 characters</span>
+                        <input class="button" type="submit" value="Next">
                         <span class="smallText">By clicking the "Next" button, you agree to creating a free account, and to <a href="#" class="input-sign-in">Terms of Service</a> and <a href="#" class="input-sign-in">Privacy Policy.</a></span>
                     </form> 
                 </section>
